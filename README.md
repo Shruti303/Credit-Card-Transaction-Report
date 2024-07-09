@@ -9,7 +9,7 @@ Importing Data To SQL database : a) Prepare csv file b) Create tables in SQL c) 
 
 Used Dax Queries for : 
 
-a) Age Grouping= SWITCH(
+a)  Age Grouping= SWITCH(
 
 TRUE(),
 
@@ -24,7 +24,7 @@ TRUE(),
 "unknown")
 
 
-b)Income Grouping=SWITCH (
+b)  Income Grouping=SWITCH (
 
 TRUE(),
 
@@ -37,13 +37,13 @@ TRUE(),
 "unknown")
 
 
-c) Revenue Earned ='Project-1(credit card)'[annual_fees] + 'Project-1(credit card)'[total_trans_amt] + 'Project-1(credit card)'[interest_earned]
+c)  Revenue Earned ='Project-1(credit card)'[annual_fees] + 'Project-1(credit card)'[total_trans_amt] + 'Project-1(credit card)'[interest_earned]
 
 
-d) week_num2= WEEKNUM('Project-1(credit card)'[week_start_date])
+d)  week_num2= WEEKNUM('Project-1(credit card)'[week_start_date])
 
 
-e)Curent week revenue= = CALCULATE(
+e)  Curent week revenue= = CALCULATE(
 
 SUM('Project-1(credit card)'[Revenue]),
 
@@ -54,7 +54,7 @@ ALL('Project-1(credit card)'),
 'Project-1(credit card)'[week_num2] = MAX('Project-1(credit card)'[week_num2]))) 
 
 
-f) Previous week Revenue  = CALCULATE(
+f)  Previous week Revenue  = CALCULATE(
 
 SUM('Project-1(credit card)'[Revenue]),
 
@@ -64,7 +64,7 @@ ALL('Project-1(credit card)'),
 
 'Project-1(credit card)'[week_num2] = MAX('Project-1(credit card)'[week_num2])-1))
 
-Project Visualization : a) credit card transaction b) credit card customer transactio report
+Project Visualization :  a) credit card transaction    b) credit card customer transactio report
 
 Project Insights=
 
